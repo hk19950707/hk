@@ -11,16 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String say(Model model) {
-//        p.setName("hk");
-        Person p = new Person("111",22,34);
-        model.addAttribute("user",p);
+    public String say() {
         return "index";
-    }
-    @Test
-    public void aa(){
-        Person p = new Person("111",22,34);
-        System.out.println(p);
     }
 
 }
