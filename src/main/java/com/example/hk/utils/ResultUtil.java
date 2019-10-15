@@ -1,7 +1,7 @@
 package com.example.hk.utils;
 
 
-import com.tl.rdc.common.constants.PfResultEnum;
+import com.example.hk.enums.PfResultEnum;
 
 public class ResultUtil {
 
