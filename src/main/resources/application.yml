@@ -1,12 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-m5el0dnf405qm095n4o.mysql.rds.aliyuncs.com:3306/ieipdb2?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowMultiQueries=true
-    username: ieip
-    password: hntl@2019
-  #    url: jdbc:mysql://rm-m5el0dnf405qm095n4o.mysql.rds.aliyuncs.com:3306/ieipdb?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&allowMultiQueries=true
-  #    username: ieip
-  #    password: N+RTqKZ93pGUdZcg2OP3KW7pQLhf3osX
+    url: jdbc:mysql://192.168.1.185:3306/erp_oms_daianfen?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: wyerp
   jpa:
     hibernate:
       ddl-auto: create
