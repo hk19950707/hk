@@ -1,9 +1,14 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /hk
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.185:3306/erp_oms_daianfen?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
     username: root
-    password: wyerp
+    password:
   jpa:
     hibernate:
       ddl-auto: create
@@ -11,13 +16,6 @@ spring:
   jooq:
     sql-dialect: org.hibernate.dialect.MySQL5Dialect
 
-    # thymeleaf支持
-  thymeleaf:
-    cache: false # 开发时关闭缓存,不然没法看到实时页面
-    mode: HTML # 用非严格的 HTML
-    encoding: UTF-8
-    servlet:
-      content-type: text/html
 
 mybatis:
   configuration.callSettersOnNulls: true
